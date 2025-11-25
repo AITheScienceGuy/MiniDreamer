@@ -1,5 +1,5 @@
 # MiniDreamer
-An attempt at implementing a Dreamer-style agent on space invaders.
+An attempt at implementing a Dreamer-style agent on space invaders using a RSSM model.
 
 ## World Model
 The world model is a latent dynamics model that creates useful latents for reconstruction. There are done heads and rewards heads that are useful for the actor-critic training. There is an encoder that encodes the first frame of the environment (pixel space to latent space) and then from there the latent dynamics model takes a latent and action as input and outputs the next latent and is optimized for the frame reconstruction task.
